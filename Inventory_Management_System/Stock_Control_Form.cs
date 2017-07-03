@@ -17,6 +17,7 @@ namespace Inventory_Management_System
 
         public Stock_Control_Form()
         {
+            Current = this;
             InitializeComponent();
         }
 
@@ -45,6 +46,29 @@ namespace Inventory_Management_System
         {
             this.Hide();
             Main.Current.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DialogResult result;
+
+            try
+            {
+                result = MessageBox.Show("Are you sure to Quit?", "Exit", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                else if (result == DialogResult.No)
+                {
+                    this.Show();
+                }
+
+            }
+            catch
+            {
+                Application.Exit();
+            }
         }
     }
 }

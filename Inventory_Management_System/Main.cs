@@ -16,6 +16,7 @@ namespace Inventory_Management_System
 
         public Main()
         {
+            Current = this;
             InitializeComponent();
         }
 

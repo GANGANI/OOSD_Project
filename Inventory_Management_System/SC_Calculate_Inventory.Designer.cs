@@ -37,7 +37,7 @@
             this.BackgroundImage = global::Inventory_Management_System.Properties.Resources.art;
             this.ClientSize = new System.Drawing.Size(608, 681);
             this.Name = "SC_Calculate_Inventory";
-            this.Text = "SC_Calculate_Inventory";
+            this.Text = "Calculate Stock Inventory";
             this.ResumeLayout(false);
 
         }

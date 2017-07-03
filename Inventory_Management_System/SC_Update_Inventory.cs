@@ -13,10 +13,12 @@ namespace Inventory_Management_System
 {
     public partial class SC_Update_Inventory : Form
     {
+        public static SC_Update_Inventory Current;
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ganga\Documents\invDetail.mdf;Integrated Security=True;Connect Timeout=30");
 
         public SC_Update_Inventory()
         {
+            Current = this;
             InitializeComponent();
         }
 
@@ -103,6 +105,16 @@ namespace Inventory_Management_System
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

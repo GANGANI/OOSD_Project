@@ -37,7 +37,7 @@
             this.BackgroundImage = global::Inventory_Management_System.Properties.Resources.art;
             this.ClientSize = new System.Drawing.Size(609, 743);
             this.Name = "RC_Calculate_Inventory";
-            this.Text = "RC_Calculate_Inventory";
+            this.Text = "Calculate Resource Inventory";
             this.ResumeLayout(false);
 
         }
