@@ -82,7 +82,7 @@ namespace Inventory_Management_System
             disp_data();
             MessageBox.Show("Record deleted Successfully");
         }
-
+        //
         private void button3_Click(object sender, EventArgs e)
         {
 
